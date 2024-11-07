@@ -17,6 +17,7 @@ if (status == 404) {
 }
 %>
 ```
+<hr>
 
 ## 2. Application 객체 활용
 - **초기화 매개변수** `web.xml`에 설정된 초기화 매개변수를 불러옵니다.
@@ -25,6 +26,7 @@ if (status == 404) {
 <h2>초기화 매개변수: <%= application.getInitParameter("INIT_PARAM") %></h2>
 <h2>서버의 물리적 경로: <%= application.getRealPath("/02ImplicitObject") %></h2>
 ```
+<hr>
 
 ## 3. Out 객체 활용
 - **버퍼 삭제 및 출력** `out.clearBuffer()`를 통해 버퍼 내용을 삭제하고, `out.flush()`로 즉시 출력합니다.
@@ -34,6 +36,9 @@ out.clearBuffer();
 out.print("출력 버퍼의 크기: " + out.getBufferSize() + "<br>");
 out.flush();
 ```
+
+<hr>
+
 ## 4. Request 객체 활용
 ### 클아이언트 요청 정보 읽기
 - 클라이언트와 서버의 환경정보 및 전송된 요청 매개변수를 읽어옵니다.
@@ -44,6 +49,8 @@ out.flush();
 <li>URL: <%= request.getRequestURL() %></li>
 <li>데이터 전송 방식: <%= request.getMethod() %></li>
 ```
+
+<hr>
 
 ## 5. Response 객체 활용
 ### 로그인 예제
