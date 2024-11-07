@@ -49,5 +49,24 @@ out.flush();
 ### 로그인 예제
 - `ResponseLogin.jsp`: `request.getParameter()`로 ID와 비밀번호를 확인하여 맞으면 `ResponseWelcome.jsp`로 리다이렉트하고, 틀리면 메인 페이지로 다시 포워드합니다
 - 연결된 페이지:
--     `ResponseMain.jsp`: 로그인 폼과 에러 메시지 출력.
--     `ResponseWelcome.jsp`: 로그인 성공 페이지.
+    - `ResponseMain.jsp`: 로그인 폼과 에러 메시지 출력.
+    - `ResponseWelcome.jsp`: 로그인 성공 페이지.
+```jsp
+if (id.equalsIgnoreCase("must") && pwd.equals("1234")) {
+    response.sendRedirect("ResponseWelcome.jsp");
+} else {
+    request.getRequestDispatcher("ResponseMain.jsp?loginErr=1")
+           .forward(request, response);
+}
+```
+### 응답 헤더 설정
+- `ResponseHeader.jsp`: 요청으로 전달된 날짜, 숫자, 문자 값을 응답 헤더에 추가하고, 특정 헤더 값만 출력합니다.
+  ```jsp
+  response.addDateHeader("myBirthday", add_date);
+response.addIntHeader("myNumber", add_int);
+response.setHeader("myName", "안중근");  // 수정
+```
+
+<hr>
+###전체 구조 요약
+- 이 예제들은 JSP 내장 객체의 다양한 기능을 활용하여 클라이언트와 서버 간의 요청 및 응답 처리를 구현합니다. 각 페이지 간의 연결 관계를 이해하고, 요청 방식(GET/POST)과 응답 처리를 조합하여 복합적인 웹 애플리케이션을 구축하는 데 유용한 패턴을 학습할 수 있습니다.
