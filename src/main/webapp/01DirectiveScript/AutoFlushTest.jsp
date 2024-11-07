@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" buffer="1kb" autoFlush="true"%>  <!--버퍼 설정-->
-<!DOCTYPE html>						//출력될 양        
+<!DOCTYPE html>						<!--  출력될 양  -->      
 <html>
 <head>
 <meta charset="UTF-8">
