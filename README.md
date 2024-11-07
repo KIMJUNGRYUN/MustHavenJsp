@@ -14,8 +14,7 @@ JSP (JavaServer Pages)를 학습하고 연습하기 위한 공간에 오신 것�
 이 학습 공간은 JSP를 학습하고자 하는 모든 사람에게 상호작용적인 학습 경험을 제공하는 것을 목표로 합니다. 초보자부터 고급 수준까지 학습자를 위한 튜토리얼과 연습 문제가 준비되어 있습니다.
 
 ## 시작하기
-이 프로젝트의 여러 폴더와 기능에 대한 링크입니다.
-
+이 git 링크는 학습 내용을 정리한 내용입니다.
 - [지시어 학습 정리 1강](https://github.com/KIMJUNGRYUN/MustHavenJsp/tree/master/src/main/webapp/01DirectiveScript)
 - [지시어 학습 정리 2강](https://github.com/KIMJUNGRYUN/MustHavenJsp/tree/master/src/main/webapp/02ImplicitObject)
 
